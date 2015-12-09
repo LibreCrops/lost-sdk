@@ -13,9 +13,9 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_HEAP_SUBSEGMENT</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="HEAP_LOCAL_SEGMENT_INFO.h.html#3">HEAP_LOCAL_SEGMENT_INFO</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="3">LocalInfo</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="HEAP_USERDATA_HEADER.h.html#11">HEAP_USERDATA_HEADER</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="4">UserBlocks</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="INTERLOCK_SEQ.h.html#17">INTERLOCK_SEQ</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">AggregateExchg</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="HEAP_LOCAL_SEGMENT_INFO.h.html">HEAP_LOCAL_SEGMENT_INFO</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="3">LocalInfo</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="HEAP_USERDATA_HEADER.h.html">HEAP_USERDATA_HEADER</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="4">UserBlocks</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="INTERLOCK_SEQ.h.html">INTERLOCK_SEQ</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">AggregateExchg</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
@@ -28,7 +28,7 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">Alignment</a></span><span style="color:#000000">[</span><span style="color:#000000">2</span><span style="color:#000000">];</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="SINGLE_LIST_ENTRY.h.html#4">SINGLE_LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">SFreeListEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="SINGLE_LIST_ENTRY.h.html">SINGLE_LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">SFreeListEntry</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">Lock</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">HEAP_SUBSEGMENT</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="20">PHEAP_SUBSEGMENT</a></span><span style="color:#000000">;</span>
 

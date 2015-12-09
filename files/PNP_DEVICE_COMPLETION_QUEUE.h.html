@@ -13,10 +13,10 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_PNP_DEVICE_COMPLETION_QUEUE</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">DispatchedList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">DispatchedList</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">DispatchedCount</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">CompletedList</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="KSEMAPHORE.h.html#5">KSEMAPHORE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">CompletedSemaphore</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">CompletedList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KSEMAPHORE.h.html">KSEMAPHORE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">CompletedSemaphore</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">SpinLock</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">PNP_DEVICE_COMPLETION_QUEUE</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="8">PPNP_DEVICE_COMPLETION_QUEUE</a></span><span style="color:#000000">;</span>
 

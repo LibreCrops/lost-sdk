@@ -13,14 +13,14 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_KTHREAD</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="DISPATCHER_HEADER.h.html#59">DISPATCHER_HEADER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Header</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="DISPATCHER_HEADER.h.html">DISPATCHER_HEADER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Header</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">CycleTime</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">QuantumTarget</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="6">InitialStack</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="7">StackLimit</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="8">KernelStack</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">ThreadLock</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="KWAIT_STATUS_REGISTER.h.html#14">KWAIT_STATUS_REGISTER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">WaitRegister</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KWAIT_STATUS_REGISTER.h.html">KWAIT_STATUS_REGISTER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">WaitRegister</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">Running</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">Alerted</a></span><span style="color:#000000">[</span><span style="color:#000000">2</span><span style="color:#000000">];</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
@@ -47,7 +47,7 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="KAPC_STATE.h.html#8">KAPC_STATE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="37">ApcState</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="KAPC_STATE.h.html">KAPC_STATE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="37">ApcState</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
 <span style="color:#000000">            </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="40">ApcStateFill</a></span><span style="color:#000000">[</span><span style="color:#000000">43</span><span style="color:#000000">];</span>
@@ -58,15 +58,15 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="45">DeferredProcessor</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="46">ApcQueueLock</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="47">WaitStatus</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="KWAIT_BLOCK.h.html#11">KWAIT_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="48">WaitBlockList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KWAIT_BLOCK.h.html">KWAIT_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="48">WaitBlockList</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="51">WaitListEntry</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="SINGLE_LIST_ENTRY.h.html#4">SINGLE_LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="52">SwapListEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="LIST_ENTRY.h.html">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="51">WaitListEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="SINGLE_LIST_ENTRY.h.html">SINGLE_LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="52">SwapListEntry</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="KQUEUE.h.html#8">KQUEUE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="54">Queue</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KQUEUE.h.html">KQUEUE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="54">Queue</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="55">Teb</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="KTIMER.h.html#9">KTIMER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="56">Timer</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KTIMER.h.html">KTIMER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="56">Timer</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
@@ -89,7 +89,7 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="76">Spare0</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="KWAIT_BLOCK.h.html#11">KWAIT_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="79">WaitBlock</a></span><span style="color:#000000">[</span><span style="color:#000000">4</span><span style="color:#000000">];</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="KWAIT_BLOCK.h.html">KWAIT_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="79">WaitBlock</a></span><span style="color:#000000">[</span><span style="color:#000000">4</span><span style="color:#000000">];</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
 <span style="color:#000000">            </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="82">WaitBlockFill4</a></span><span style="color:#000000">[</span><span style="color:#000000">44</span><span style="color:#000000">];</span>
@@ -112,7 +112,7 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
 <span style="color:#000000">            </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="100">WaitBlockFill7</a></span><span style="color:#000000">[</span><span style="color:#000000">168</span><span style="color:#000000">];</span>
 <span style="color:#000000">            </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="101">TebMappedLowVa</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">            </span><span style="color:#000000"><a href="UMS_CONTROL_BLOCK.h.html#44">UMS_CONTROL_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="102">Ucb</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="UMS_CONTROL_BLOCK.h.html">UMS_CONTROL_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="102">Ucb</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
@@ -128,8 +128,8 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">            </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="118">QueueListEntry</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="KTRAP_FRAME.h.html#85">KTRAP_FRAME</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="119">TrapFrame</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="118">QueueListEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KTRAP_FRAME.h.html">KTRAP_FRAME</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="119">TrapFrame</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="120">FirstArgument</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
@@ -154,15 +154,15 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">    </span><span style="color:#000000">CHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="141">Saturation</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="142">SystemCallNumber</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="143">FreezeCount</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="GROUP_AFFINITY.h.html#6">GROUP_AFFINITY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="144">UserAffinity</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="KPROCESS.h.html#46">KPROCESS</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="145">Process</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="GROUP_AFFINITY.h.html#6">GROUP_AFFINITY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="146">Affinity</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="GROUP_AFFINITY.h.html">GROUP_AFFINITY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="144">UserAffinity</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KPROCESS.h.html">KPROCESS</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="145">Process</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="GROUP_AFFINITY.h.html">GROUP_AFFINITY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="146">Affinity</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="147">IdealProcessor</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="148">UserIdealProcessor</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="KAPC_STATE.h.html#8">KAPC_STATE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="149">ApcStatePointer</a></span><span style="color:#000000">[</span><span style="color:#000000">2</span><span style="color:#000000">];</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KAPC_STATE.h.html">KAPC_STATE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="149">ApcStatePointer</a></span><span style="color:#000000">[</span><span style="color:#000000">2</span><span style="color:#000000">];</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="KAPC_STATE.h.html#8">KAPC_STATE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="152">SavedApcState</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="KAPC_STATE.h.html">KAPC_STATE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="152">SavedApcState</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
 <span style="color:#000000">            </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="155">SavedApcStateFill</a></span><span style="color:#000000">[</span><span style="color:#000000">43</span><span style="color:#000000">];</span>
@@ -176,7 +176,7 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="163">StackBase</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="KAPC.h.html#19">KAPC</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="166">SuspendApc</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="KAPC.h.html">KAPC</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="166">SuspendApc</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
 <span style="color:#000000">            </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="169">SuspendApcFill0</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
@@ -195,7 +195,7 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
 <span style="color:#000000">            </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="184">SuspendApcFill3</a></span><span style="color:#000000">[</span><span style="color:#000000">64</span><span style="color:#000000">];</span>
-<span style="color:#000000">            </span><span style="color:#000000"><a href="KPRCB.h.html#260">KPRCB</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="185">WaitPrcb</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="KPRCB.h.html">KPRCB</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="185">WaitPrcb</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
@@ -211,15 +211,15 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="KSEMAPHORE.h.html#5">KSEMAPHORE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="201">SuspendSemaphore</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="KSEMAPHORE.h.html">KSEMAPHORE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="201">SuspendSemaphore</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
 <span style="color:#000000">            </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="204">SuspendSemaphorefill</a></span><span style="color:#000000">[</span><span style="color:#000000">28</span><span style="color:#000000">];</span>
 <span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="205">SListFaultCount</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="208">ThreadListEntry</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="209">MutantListHead</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="208">ThreadListEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="209">MutantListHead</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="210">SListFaultAddress</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="211">ReadOperationCount</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="212">WriteOperationCount</a></span><span style="color:#000000">;</span>
@@ -227,9 +227,9 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">    </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="214">ReadTransferCount</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="215">WriteTransferCount</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="216">OtherTransferCount</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="KTHREAD_COUNTERS.h.html#10">KTHREAD_COUNTERS</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="217">ThreadCounters</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="XSAVE_FORMAT.h.html#19">XSAVE_FORMAT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="218">StateSaveArea</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="XSTATE_SAVE.h.html#7">XSTATE_SAVE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="219">XStateSave</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KTHREAD_COUNTERS.h.html">KTHREAD_COUNTERS</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="217">ThreadCounters</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="XSAVE_FORMAT.h.html">XSAVE_FORMAT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="218">StateSaveArea</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="XSTATE_SAVE.h.html">XSTATE_SAVE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="219">XStateSave</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="220">KTHREAD</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="220">PKTHREAD</a></span><span style="color:#000000">;</span>
 
 

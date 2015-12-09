@@ -17,21 +17,21 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
 <span style="color:#000000">        </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Flink</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">WsIndex</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="KEVENT.h.html#4">KEVENT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="7">Event</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="KEVENT.h.html">KEVENT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="7">Event</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="8">Next</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="9">VolatileNext</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="KTHREAD.h.html#220">KTHREAD</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="10">KernelStackOwner</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="SINGLE_LIST_ENTRY.h.html#4">SINGLE_LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">NextStackPfn</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="KTHREAD.h.html">KTHREAD</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="10">KernelStackOwner</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="SINGLE_LIST_ENTRY.h.html">SINGLE_LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">NextStackPfn</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">u1</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
 <span style="color:#000000">        </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">Blink</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="MMPTE.h.html#16">MMPTE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="16">ImageProtoPte</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="MMPTE.h.html">MMPTE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="16">ImageProtoPte</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">ShareCount</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">u2</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="MMPTE.h.html#16">MMPTE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="21">PteAddress</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="MMPTE.h.html">MMPTE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="21">PteAddress</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="22">VolatilePteAddress</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">Lock</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="24">PteLong</a></span><span style="color:#000000">;</span>
@@ -41,7 +41,7 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
 <span style="color:#000000">            </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="30">ReferenceCount</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">            </span><span style="color:#000000"><a href="MMPFNENTRY.h.html#14">MMPFNENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="31">e1</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="MMPFNENTRY.h.html">MMPFNENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="31">e1</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
@@ -58,7 +58,7 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="45">ViewCount</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="MMPTE.h.html#16">MMPTE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="48">OriginalPte</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="MMPTE.h.html">MMPTE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="48">OriginalPte</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="49">AweReferenceCount</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>

@@ -13,8 +13,8 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_CONTROL_AREA</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="SEGMENT.h.html#26">SEGMENT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="3">Segment</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">DereferenceList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="SEGMENT.h.html">SEGMENT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="3">Segment</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">DereferenceList</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">NumberOfSectionReferences</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">NumberOfPfnReferences</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">NumberOfMappedViews</a></span><span style="color:#000000">;</span>
@@ -22,17 +22,17 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
 <span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">LongFlags</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#000000"><a href="MMSECTION_FLAGS.h.html#30">MMSECTION_FLAGS</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="MMSECTION_FLAGS.h.html">MMSECTION_FLAGS</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">Flags</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">u</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">FlushInProgressCount</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="EX_FAST_REF.h.html#9">EX_FAST_REF</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">FilePointer</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="EX_FAST_REF.h.html">EX_FAST_REF</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">FilePointer</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">ControlAreaLock</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
 <span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">ModifiedWriteCount</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">StartingFrame</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="MI_SECTION_CREATION_GATE.h.html#5">MI_SECTION_CREATION_GATE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="22">WaitingForDeletion</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="MI_SECTION_CREATION_GATE.h.html">MI_SECTION_CREATION_GATE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="22">WaitingForDeletion</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
@@ -55,13 +55,13 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">            </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">            </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">            </span><span style="color:#000000">{</span>
-<span style="color:#000000">                </span><span style="color:#000000"><a href="MM_SUBSECTION_AVL_TABLE.h.html#8">MM_SUBSECTION_AVL_TABLE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="45">SubsectionRoot</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">                </span><span style="color:#000000"><a href="MI_IMAGE_SECURITY_REFERENCE.h.html#6">MI_IMAGE_SECURITY_REFERENCE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="46">SeImageStub</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">                </span><span style="color:#000000"><a href="MM_SUBSECTION_AVL_TABLE.h.html">MM_SUBSECTION_AVL_TABLE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="45">SubsectionRoot</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">                </span><span style="color:#000000"><a href="MI_IMAGE_SECURITY_REFERENCE.h.html">MI_IMAGE_SECURITY_REFERENCE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="46">SeImageStub</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">            </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="48">e2</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="49">u2</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="50">LockedPages</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="51">ViewList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="51">ViewList</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="52">CONTROL_AREA</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="52">PCONTROL_AREA</a></span><span style="color:#000000">;</span>
 
 
