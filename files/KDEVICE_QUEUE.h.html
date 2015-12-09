@@ -1,0 +1,107 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_KDEVICE_QUEUE</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000">SHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Type</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">SHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">Size</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">DeviceListHead</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">Lock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">Busy</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000">Reserved</span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">8</span><span style="color:#000000">;</span>
+<a href="ALPC_PORT_ATTRIBUTES.h.html#12">Reserved -> ALPC_PORT_ATTRIBUTES.h:12</a>
+<a href="ARBITER_ALTERNATIVE.h.html#10">Reserved -> ARBITER_ALTERNATIVE.h:10</a>
+<a href="CM_KEY_SECURITY.h.html#4">Reserved -> CM_KEY_SECURITY.h:4</a>
+<a href="CM_PARTIAL_RESOURCE_DESCRIPTOR.h.html#64">Reserved -> CM_PARTIAL_RESOURCE_DESCRIPTOR.h:64</a>
+<a href="COMPRESSED_DATA_INFO.h.html#7">Reserved -> COMPRESSED_DATA_INFO.h:7</a>
+<a href="DBGKD_QUERY_MEMORY.h.html#4">Reserved -> DBGKD_QUERY_MEMORY.h:4</a>
+<a href="DEVICE_CAPABILITIES.h.html#24">Reserved -> DEVICE_CAPABILITIES.h:24</a>
+<a href="DEVICE_OBJECT.h.html#31">Reserved -> DEVICE_OBJECT.h:31</a>
+<a href="DISPATCHER_HEADER.h.html#29">Reserved -> DISPATCHER_HEADER.h:29</a>
+<a href="DUMP_INITIALIZATION_CONTEXT.h.html#4">Reserved -> DUMP_INITIALIZATION_CONTEXT.h:4</a>
+<a href="ETHREAD.h.html#55">Reserved -> ETHREAD.h:55</a>
+<a href="EVENT_DATA_DESCRIPTOR.h.html#5">Reserved -> EVENT_DATA_DESCRIPTOR.h:5</a>
+<a href="EVENT_FILTER_HEADER.h.html#5">Reserved -> EVENT_FILTER_HEADER.h:5</a>
+<a href="FIRMWARE_INFORMATION_LOADER_BLOCK.h.html#4">Reserved -> FIRMWARE_INFORMATION_LOADER_BLOCK.h:4</a>
+<a href="FSRTL_ADVANCED_FCB_HEADER.h.html#8">Reserved -> FSRTL_ADVANCED_FCB_HEADER.h:8</a>
+<a href="FS_FILTER_CALLBACKS.h.html#4">Reserved -> FS_FILTER_CALLBACKS.h:4</a>
+<a href="FS_FILTER_CALLBACK_DATA.h.html#5">Reserved -> FS_FILTER_CALLBACK_DATA.h:5</a>
+<a href="GROUP_AFFINITY.h.html#5">Reserved -> GROUP_AFFINITY.h:5</a>
+<a href="HEAP.h.html#15">Reserved -> HEAP.h:15</a>
+<a href="HEAP_ENTRY.h.html#28">Reserved -> HEAP_ENTRY.h:28</a>
+<a href="HEAP_FREE_ENTRY.h.html#28">Reserved -> HEAP_FREE_ENTRY.h:28</a>
+<a href="HEAP_SEGMENT.h.html#15">Reserved -> HEAP_SEGMENT.h:15</a>
+<a href="HEAP_USERDATA_HEADER.h.html#8">Reserved -> HEAP_USERDATA_HEADER.h:8</a>
+<a href="IO_RESOURCE_DESCRIPTOR.h.html#55">Reserved -> IO_RESOURCE_DESCRIPTOR.h:55</a>
+<a href="IO_RESOURCE_REQUIREMENTS_LIST.h.html#7">Reserved -> IO_RESOURCE_REQUIREMENTS_LIST.h:7</a>
+<a href="IO_STACK_LOCATION.h.html#197">Reserved -> IO_STACK_LOCATION.h:197</a>
+<a href="IO_STACK_LOCATION.h.html#21">Reserved -> IO_STACK_LOCATION.h:21</a>
+<a href="IO_STACK_LOCATION.h.html#29">Reserved -> IO_STACK_LOCATION.h:29</a>
+<a href="KAFFINITY_EX.h.html#5">Reserved -> KAFFINITY_EX.h:5</a>
+<a href="KINTERRUPT.h.html#28">Reserved -> KINTERRUPT.h:28</a>
+<a href="KTHREAD.h.html#31">Reserved -> KTHREAD.h:31</a>
+<a href="KUMS_CONTEXT_HEADER.h.html#17">Reserved -> KUMS_CONTEXT_HEADER.h:17</a>
+<a href="LOADER_PARAMETER_BLOCK.h.html#6">Reserved -> LOADER_PARAMETER_BLOCK.h:6</a>
+<a href="LOADER_PARAMETER_EXTENSION.h.html#20">Reserved -> LOADER_PARAMETER_EXTENSION.h:20</a>
+<a href="MBCB.h.html#7">Reserved -> MBCB.h:7</a>
+<a href="MMPTE_SOFTWARE.h.html#10">Reserved -> MMPTE_SOFTWARE.h:10</a>
+<a href="MMPTE_TIMESTAMP.h.html#8">Reserved -> MMPTE_TIMESTAMP.h:8</a>
+<a href="MMSUPPORT_FLAGS.h.html#11">Reserved -> MMSUPPORT_FLAGS.h:11</a>
+<a href="OBJECT_HEADER_CREATOR_INFO.h.html#6">Reserved -> OBJECT_HEADER_CREATOR_INFO.h:6</a>
+<a href="OBJECT_HEADER_PROCESS_INFO.h.html#4">Reserved -> OBJECT_HEADER_PROCESS_INFO.h:4</a>
+<a href="OBJECT_HEADER_QUOTA_INFO.h.html#7">Reserved -> OBJECT_HEADER_QUOTA_INFO.h:7</a>
+<a href="PPM_IDLE_STATES.h.html#12">Reserved -> PPM_IDLE_STATES.h:12</a>
+<a href="PPM_PERF_STATES.h.html#13">Reserved -> PPM_PERF_STATES.h:13</a>
+<a href="PPM_PERF_STATES.h.html#24">Reserved -> PPM_PERF_STATES.h:24</a>
+<a href="PROCESSOR_IDLESTATE_POLICY.h.html#11">Reserved -> PROCESSOR_IDLESTATE_POLICY.h:11</a>
+<a href="PROCESSOR_NUMBER.h.html#5">Reserved -> PROCESSOR_NUMBER.h:5</a>
+<a href="PROCESSOR_PERFSTATE_POLICY.h.html#18">Reserved -> PROCESSOR_PERFSTATE_POLICY.h:18</a>
+<a href="PROCESSOR_POWER_STATE.h.html#13">Reserved -> PROCESSOR_POWER_STATE.h:13</a>
+<a href="PROC_HISTORY_ENTRY.h.html#5">Reserved -> PROC_HISTORY_ENTRY.h:5</a>
+<a href="PROFILE_PARAMETER_BLOCK.h.html#4">Reserved -> PROFILE_PARAMETER_BLOCK.h:4</a>
+<a href="PS_CPU_QUOTA_BLOCK.h.html#16">Reserved -> PS_CPU_QUOTA_BLOCK.h:16</a>
+<a href="RELATIVE_SYMLINK_INFO.h.html#6">Reserved -> RELATIVE_SYMLINK_INFO.h:6</a>
+<a href="RTL_BALANCED_LINKS.h.html#7">Reserved -> RTL_BALANCED_LINKS.h:7</a>
+<a href="RTL_HANDLE_TABLE.h.html#5">Reserved -> RTL_HANDLE_TABLE.h:5</a>
+<a href="RTL_UMS_CONTEXT.h.html#30">Reserved -> RTL_UMS_CONTEXT.h:30</a>
+<a href="SECTION_IMAGE_INFORMATION.h.html#31">Reserved -> SECTION_IMAGE_INFORMATION.h:31</a>
+<a href="SLIST_HEADER.h.html#15">Reserved -> SLIST_HEADER.h:15</a>
+<a href="SLIST_HEADER.h.html#24">Reserved -> SLIST_HEADER.h:24</a>
+<a href="SLIST_HEADER.h.html#32">Reserved -> SLIST_HEADER.h:32</a>
+<a href="SYSTEM_POWER_POLICY.h.html#8">Reserved -> SYSTEM_POWER_POLICY.h:8</a>
+<a href="TRACE_ENABLE_CONTEXT_EX.h.html#8">Reserved -> TRACE_ENABLE_CONTEXT_EX.h:8</a>
+<a href="VACB_ARRAY_HEADER.h.html#6">Reserved -> VACB_ARRAY_HEADER.h:6</a>
+<a href="WHEA_ERROR_RECORD_HEADER.h.html#18">Reserved -> WHEA_ERROR_RECORD_HEADER.h:18</a>
+<a href="WHEA_ERROR_RECORD_HEADER_FLAGS.h.html#8">Reserved -> WHEA_ERROR_RECORD_HEADER_FLAGS.h:8</a>
+<a href="WHEA_ERROR_RECORD_HEADER_VALIDBITS.h.html#8">Reserved -> WHEA_ERROR_RECORD_HEADER_VALIDBITS.h:8</a>
+<a href="WHEA_ERROR_RECORD_SECTION_DESCRIPTOR.h.html#7">Reserved -> WHEA_ERROR_RECORD_SECTION_DESCRIPTOR.h:7</a>
+<a href="WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_FLAGS.h.html#11">Reserved -> WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_FLAGS.h:11</a>
+<a href="WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS.h.html#7">Reserved -> WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS.h:7</a>
+<a href="WHEA_MEMORY_ERROR_SECTION_VALIDBITS.h.html#20">Reserved -> WHEA_MEMORY_ERROR_SECTION_VALIDBITS.h:20</a>
+<a href="WHEA_PERSISTENCE_INFO.h.html#10">Reserved -> WHEA_PERSISTENCE_INFO.h:10</a>
+<a href="WHEA_TIMESTAMP.h.html#9">Reserved -> WHEA_TIMESTAMP.h:9</a>
+<a href="XSAVE_AREA_HEADER.h.html#4">Reserved -> XSAVE_AREA_HEADER.h:4</a>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">Hint</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">56</span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">KDEVICE_QUEUE</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="13">PKDEVICE_QUEUE</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

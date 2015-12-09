@@ -1,0 +1,54 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_DEVICE_OBJECT</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000">SHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Type</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">Size</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">ReferenceCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="DRIVER_OBJECT.h.html#18">DRIVER_OBJECT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="6">DriverObject</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="DEVICE_OBJECT.h.html#32">DEVICE_OBJECT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="7">NextDevice</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="DEVICE_OBJECT.h.html#32">DEVICE_OBJECT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="8">AttachedDevice</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="IRP.h.html#62">IRP</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="9">CurrentIrp</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="IO_TIMER.h.html#9">IO_TIMER</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="10">Timer</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">Characteristics</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="VPB.h.html#12">VPB</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="13">Vpb</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="14">DeviceExtension</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">DeviceType</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">CHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">StackSize</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">ListEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="WAIT_CONTEXT_BLOCK.h.html#10">WAIT_CONTEXT_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">Wcb</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="21">Queue</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="22">AlignmentRequirement</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KDEVICE_QUEUE.h.html#13">KDEVICE_QUEUE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">DeviceQueue</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KDPC.h.html#12">KDPC</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="24">Dpc</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="25">ActiveThreadCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="26">SecurityDescriptor</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KEVENT.h.html#4">KEVENT</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="27">DeviceLock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="28">SectorSize</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="29">Spare1</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="DEVOBJ_EXTENSION.h.html#17">DEVOBJ_EXTENSION</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="30">DeviceObjectExtension</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="31">Reserved</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="32">DEVICE_OBJECT</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="32">PDEVICE_OBJECT</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

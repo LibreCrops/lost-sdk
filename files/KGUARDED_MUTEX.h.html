@@ -1,0 +1,38 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_KGUARDED_MUTEX</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Count</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KTHREAD.h.html#220">KTHREAD</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="4">Owner</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Contention</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KGATE.h.html#4">KGATE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">Gate</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">SHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">KernelApcDisable</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">SHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">SpecialApcDisable</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">CombinedApcDisable</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">KGUARDED_MUTEX</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="16">PKGUARDED_MUTEX</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,49 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">enum</span></b>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="3">COMIMAGE_FLAGS_ILONLY</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="4">COMIMAGE_FLAGS_32BITREQUIRED</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">2</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="5">COMIMAGE_FLAGS_IL_LIBRARY</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">4</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="6">COMIMAGE_FLAGS_STRONGNAMESIGNED</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">8</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="7">COMIMAGE_FLAGS_NATIVE_ENTRYPOINT</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">16</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="8">COMIMAGE_FLAGS_TRACKDEBUGDATA</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">65536</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="9">COR_VERSION_MAJOR_V2</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">2</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="10">COR_VERSION_MAJOR</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">2</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="11">COR_VERSION_MINOR</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">0</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="12">COR_DELETED_NAME_LENGTH</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">8</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="13">COR_VTABLEGAP_NAME_LENGTH</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">8</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="14">NATIVE_TYPE_MAX_CB</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="15">COR_ILMETHOD_SECT_SMALL_MAX_DATASIZE</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">255</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="16">IMAGE_COR_MIH_METHODRVA</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="17">IMAGE_COR_MIH_EHRVA</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">2</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="18">IMAGE_COR_MIH_BASICBLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">8</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="19">COR_VTABLE_32BIT</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="20">COR_VTABLE_64BIT</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">2</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="21">COR_VTABLE_FROM_UNMANAGED</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">4</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="22">COR_VTABLE_FROM_UNMANAGED_RETAIN_APPDOMAIN</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">8</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="23">COR_VTABLE_CALL_MOST_DERIVED</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">16</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="24">IMAGE_COR_EATJ_THUNK_SIZE</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">32</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="25">MAX_CLASS_NAME</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">1024</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="26">MAX_PACKAGE_NAME</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">1024</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="27">ReplacesCorHdrNumericDefines</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

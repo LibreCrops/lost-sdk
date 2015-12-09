@@ -1,0 +1,47 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">enum</span></b>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="3">DeviceNodeUnspecified</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">768</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="4">DeviceNodeUninitialized</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">769</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="5">DeviceNodeInitialized</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">770</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="6">DeviceNodeDriversAdded</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">771</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="7">DeviceNodeResourcesAssigned</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">772</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="8">DeviceNodeStartPending</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">773</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="9">DeviceNodeStartCompletion</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">774</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="10">DeviceNodeStartPostWork</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">775</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="11">DeviceNodeStarted</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">776</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="12">DeviceNodeQueryStopped</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">777</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="13">DeviceNodeStopped</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">778</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="14">DeviceNodeRestartCompletion</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">779</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="15">DeviceNodeEnumeratePending</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">780</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="16">DeviceNodeEnumerateCompletion</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">781</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="17">DeviceNodeAwaitingQueuedDeletion</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">782</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="18">DeviceNodeAwaitingQueuedRemoval</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">783</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="19">DeviceNodeQueryRemoved</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">784</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="20">DeviceNodeRemovePendingCloses</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">785</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="21">DeviceNodeRemoved</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">786</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="22">DeviceNodeDeletePendingCloses</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">787</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="23">DeviceNodeDeleted</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">788</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="24">MaxDeviceNodeState</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">789</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="25">PNP_DEVNODE_STATE</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

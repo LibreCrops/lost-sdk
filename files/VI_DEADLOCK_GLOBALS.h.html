@@ -1,0 +1,53 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_VI_DEADLOCK_GLOBALS</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">TimeAcquire</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">TimeRelease</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="5">ResourceDatabase</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">ResourceDatabaseCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="VF_ADDRESS_RANGE.h.html#5">VF_ADDRESS_RANGE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">ResourceAddressRange</a></span><span style="color:#000000">[</span><span style="color:#000000">1023</span><span style="color:#000000">];</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="8">ThreadDatabase</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">ThreadDatabaseCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="VF_ADDRESS_RANGE.h.html#5">VF_ADDRESS_RANGE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">ThreadAddressRange</a></span><span style="color:#000000">[</span><span style="color:#000000">1023</span><span style="color:#000000">];</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">AllocationFailures</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">NodesTrimmedBasedOnAge</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">NodesTrimmedBasedOnCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">NodesSearched</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">MaxNodesSearched</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">SequenceNumber</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">RecursionDepthLimit</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">SearchedNodesLimit</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">DepthLimitHits</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">SearchLimitHits</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="21">ABC_ACB_Skipped</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="22">OutOfOrderReleases</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">NodesReleasedOutOfOrder</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="24">TotalReleases</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="25">RootNodesDeleted</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="26">ForgetHistoryCounter</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="27">Instigator</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="28">NumberOfParticipants</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="VI_DEADLOCK_NODE.h.html#27">VI_DEADLOCK_NODE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="29">Participant</a></span><span style="color:#000000">[</span><span style="color:#000000">32</span><span style="color:#000000">];</span>
+<span style="color:#000000">    </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="30">ChildrenCountWatermark</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="31">VI_DEADLOCK_GLOBALS</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="31">PVI_DEADLOCK_GLOBALS</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

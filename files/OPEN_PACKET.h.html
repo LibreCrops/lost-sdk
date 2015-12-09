@@ -1,0 +1,52 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_OPEN_PACKET</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000">SHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Type</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">SHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">Size</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="FILE_OBJECT.h.html#33">FILE_OBJECT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="5">FileObject</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">FinalStatus</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">Information</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">ParseCheck</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="FILE_OBJECT.h.html#33">FILE_OBJECT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="9">RelatedFileObject</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="OBJECT_ATTRIBUTES.h.html#9">OBJECT_ATTRIBUTES</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="10">OriginalAttributes</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html#14">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">AllocationSize</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">CreateOptions</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">FileAttributes</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">ShareAccess</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="15">EaBuffer</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">EaLength</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">Options</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">Disposition</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="FILE_BASIC_INFORMATION.h.html#8">FILE_BASIC_INFORMATION</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="19">BasicInformation</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="FILE_NETWORK_OPEN_INFORMATION.h.html#10">FILE_NETWORK_OPEN_INFORMATION</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="20">NetworkInformation</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CREATE_FILE_TYPE.h.html#6">CREATE_FILE_TYPE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="21">CreateFileType</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="22">MailslotOrPipeParameters</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">Override</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="24">QueryOnly</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="25">DeleteOnly</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="26">FullAttributes</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="DUMMY_FILE_OBJECT.h.html#5">DUMMY_FILE_OBJECT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="27">LocalFileObject</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="28">InternalFlags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="IO_DRIVER_CREATE_CONTEXT.h.html#7">IO_DRIVER_CREATE_CONTEXT</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="29">DriverCreateContext</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="30">OPEN_PACKET</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="30">POPEN_PACKET</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

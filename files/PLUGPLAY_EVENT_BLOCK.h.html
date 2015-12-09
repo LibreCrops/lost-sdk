@@ -1,0 +1,86 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_PLUGPLAY_EVENT_BLOCK</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="GUID.h.html#7">GUID</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">EventGuid</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="PLUGPLAY_EVENT_CATEGORY.h.html#15">PLUGPLAY_EVENT_CATEGORY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">EventCategory</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="5">Result</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">TotalSize</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="8">DeviceObject</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="GUID.h.html#7">GUID</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">ClassGuid</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">WCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">SymbolicLinkName</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">DeviceClass</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">WCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">DeviceIds</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">TargetDevice</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">WCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="22">DeviceId</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">InstallDevice</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="26">NotificationStructure</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">WCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="27">DeviceIds</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="28">CustomNotification</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="31">Notification</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="32">ProfileNotification</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="35">NotificationCode</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="36">NotificationData</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="37">PowerNotification</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="PNP_VETO_TYPE.h.html#16">PNP_VETO_TYPE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="40">VetoType</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">WCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="41">DeviceIdVetoNameBuffer</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="42">VetoNotification</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="GUID.h.html#7">GUID</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="45">BlockedDriverGuid</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="46">BlockedDriverNotification</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">WCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="49">ParentId</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="50">InvalidIDNotification</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="GUID.h.html#7">GUID</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="53">PowerSettingGuid</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="54">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="55">SessionId</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="56">DataLength</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="57">Data</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="58">PowerSettingNotification</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">WCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="61">DeviceId</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="62">PropertyChangeNotification</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="63">u</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="64">PLUGPLAY_EVENT_BLOCK</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="64">PPLUGPLAY_EVENT_BLOCK</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

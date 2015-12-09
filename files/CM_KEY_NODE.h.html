@@ -1,0 +1,53 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_CM_KEY_NODE</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Signature</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html#14">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">LastWriteTime</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">Spare</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">Parent</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">SubKeyCounts</a></span><span style="color:#000000">[</span><span style="color:#000000">2</span><span style="color:#000000">];</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">SubKeyLists</a></span><span style="color:#000000">[</span><span style="color:#000000">2</span><span style="color:#000000">];</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="CHILD_LIST.h.html#5">CHILD_LIST</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">ValueList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="CM_KEY_REFERENCE.h.html#5">CM_KEY_REFERENCE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">ChildHiveReference</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">Security</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">Class</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">MaxNameLen</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">16</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="21">UserFlags</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">4</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="22">VirtControlFlags</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">4</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">Debug</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">8</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="24">MaxClassLen</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="25">MaxValueNameLen</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="26">MaxValueDataLen</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="27">WorkVar</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="28">NameLength</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="29">ClassLength</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">WCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="30">Name</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="31">CM_KEY_NODE</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="31">PCM_KEY_NODE</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

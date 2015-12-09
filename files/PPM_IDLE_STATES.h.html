@@ -1,0 +1,42 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_PPM_IDLE_STATES</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Count</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">AsULONG</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">AllowScaling</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">Disabled</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">HvMaxCState</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">4</span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">Reserved</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">26</span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">TargetState</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">ActualState</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">OldState</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KAFFINITY_EX.h.html#7">KAFFINITY_EX</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">TargetProcessors</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="PPM_IDLE_STATE.h.html#17">PPM_IDLE_STATE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">State</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">PPM_IDLE_STATES</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="20">PPPM_IDLE_STATES</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

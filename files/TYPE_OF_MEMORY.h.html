@@ -1,0 +1,55 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">enum</span></b>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="3">LoaderExceptionBlock</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">0</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="4">LoaderSystemBlock</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="5">LoaderFree</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">2</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="6">LoaderBad</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">3</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="7">LoaderLoadedProgram</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">4</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="8">LoaderFirmwareTemporary</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">5</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="9">LoaderFirmwarePermanent</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">6</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="10">LoaderOsloaderHeap</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">7</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="11">LoaderOsloaderStack</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">8</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="12">LoaderSystemCode</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">9</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="13">LoaderHalCode</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">10</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="14">LoaderBootDriver</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">11</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="15">LoaderConsoleInDriver</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">12</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="16">LoaderConsoleOutDriver</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">13</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="17">LoaderStartupDpcStack</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">14</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="18">LoaderStartupKernelStack</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">15</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="19">LoaderStartupPanicStack</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">16</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="20">LoaderStartupPcrPage</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">17</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="21">LoaderStartupPdrPage</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">18</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="22">LoaderRegistryData</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">19</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="23">LoaderMemoryData</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">20</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="24">LoaderNlsData</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">21</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="25">LoaderSpecialMemory</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">22</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="26">LoaderBBTMemory</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">23</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="27">LoaderReserve</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">24</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="28">LoaderXIPRom</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">25</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="29">LoaderHALCachedMemory</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">26</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="30">LoaderLargePageFiller</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">27</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="31">LoaderErrorLogMemory</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">28</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="32">LoaderMaximum</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">29</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="33">TYPE_OF_MEMORY</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,55 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_KEXCEPTION_FRAME</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">P1Home</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">P2Home</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">P3Home</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">P4Home</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">P5</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">InitialStack</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="M128A.h.html#5">M128A</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">Xmm6</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="M128A.h.html#5">M128A</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">Xmm7</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="M128A.h.html#5">M128A</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">Xmm8</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="M128A.h.html#5">M128A</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">Xmm9</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="M128A.h.html#5">M128A</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">Xmm10</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="M128A.h.html#5">M128A</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">Xmm11</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="M128A.h.html#5">M128A</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">Xmm12</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="M128A.h.html#5">M128A</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">Xmm13</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="M128A.h.html#5">M128A</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">Xmm14</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="M128A.h.html#5">M128A</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">Xmm15</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">TrapFrame</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">CallbackStack</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="21">OutputBuffer</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="22">OutputLength</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">MxCsr</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="24">Rbp</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="25">Rbx</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="26">Rdi</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="27">Rsi</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="28">R12</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="29">R13</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="30">R14</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="31">R15</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="32">Return</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="33">KEXCEPTION_FRAME</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="33">PKEXCEPTION_FRAME</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

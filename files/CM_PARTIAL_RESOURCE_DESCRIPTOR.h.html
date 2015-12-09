@@ -1,0 +1,110 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_CM_PARTIAL_RESOURCE_DESCRIPTOR</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Type</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">ShareDisposition</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html#14">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">Start</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">Length</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">Generic</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html#14">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">Start</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">Length</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">Port</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">Level</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="21">Group</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="22">Vector</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">Affinity</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="24">Interrupt</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">            </span><span style="color:#000000">{</span>
+<span style="color:#000000">                </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">                </span><span style="color:#000000">{</span>
+<span style="color:#000000">                    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="31">Group</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">                    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="32">MessageCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">                    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="33">Vector</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">                    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="34">Affinity</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">                </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="35">Raw</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">                </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">                </span><span style="color:#000000">{</span>
+<span style="color:#000000">                    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="38">Level</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">                    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="39">Group</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">                    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="40">Vector</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">                    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="41">Affinity</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">                </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="42">Translated</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="44">MessageInterrupt</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html#14">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="47">Start</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="48">Length</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="49">Memory</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="52">Channel</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="53">Port</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="54">Reserved1</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="55">Dma</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="58">Data</a></span><span style="color:#000000">[</span><span style="color:#000000">3</span><span style="color:#000000">];</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="59">DevicePrivate</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="62">Start</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="63">Length</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="64">Reserved</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="65">BusNumber</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="68">DataSize</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="69">Reserved1</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="70">Reserved2</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="71">DeviceSpecificData</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html#14">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="74">Start</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="75">Length40</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="76">Memory40</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html#14">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="79">Start</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="80">Length48</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="81">Memory48</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html#14">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="84">Start</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="85">Length64</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="86">Memory64</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="87">u</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="88">CM_PARTIAL_RESOURCE_DESCRIPTOR</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="88">PCM_PARTIAL_RESOURCE_DESCRIPTOR</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

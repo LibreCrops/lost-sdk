@@ -1,0 +1,45 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_MMVAD_SHORT</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a href="RTL_BALANCED_LINKS.h.html#6">Balance</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">2</span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="MMVAD.h.html#37">MMVAD</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="6">Parent</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">u1</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="MMVAD.h.html#37">MMVAD</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="8">LeftChild</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="MMVAD.h.html#37">MMVAD</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="9">RightChild</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">StartingVpn</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">EndingVpn</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">LongFlags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="MMVAD_FLAGS.h.html#10">MMVAD_FLAGS</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">VadFlags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">u</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="EX_PUSH_LOCK.h.html#16">EX_PUSH_LOCK</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">PushLock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">LongFlags3</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="MMVAD_FLAGS3.h.html#11">MMVAD_FLAGS3</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="21">VadFlags3</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="22">u5</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">MMVAD_SHORT</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="23">PMMVAD_SHORT</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

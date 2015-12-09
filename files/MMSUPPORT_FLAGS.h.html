@@ -1,0 +1,40 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_MMSUPPORT_FLAGS</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">WorkingSetType</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">3</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">ModwriterAttached</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">TrimHard</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">MaximumWorkingSetHard</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">ForceTrim</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">MinimumWorkingSetHard</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">SessionMaster</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">TrimmerState</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">2</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">Reserved</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">PageStealers</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">4</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">MemoryPriority</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">8</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">WsleDeleted</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">VmExiting</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">ExpansionFailed</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">Available</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">5</span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">MMSUPPORT_FLAGS</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="18">PMMSUPPORT_FLAGS</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

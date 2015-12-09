@@ -1,0 +1,45 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_DEVICE_OBJECT_POWER_EXTENSION</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">IdleCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">BusyCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">BusyReference</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">TotalBusyCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">ConservationIdleTime</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">PerformanceIdleTime</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="DEVICE_OBJECT.h.html#32">DEVICE_OBJECT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="9">DeviceObject</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">IdleList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="POP_DEVICE_IDLE_TYPE.h.html#5">POP_DEVICE_IDLE_TYPE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">IdleType</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="DEVICE_POWER_STATE.h.html#9">DEVICE_POWER_STATE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">IdleState</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="DEVICE_POWER_STATE.h.html#9">DEVICE_POWER_STATE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">CurrentState</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">Volume</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">IdleTime</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">NonIdleTime</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="21">Disk</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="22">Specific</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">DEVICE_OBJECT_POWER_EXTENSION</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="23">PDEVICE_OBJECT_POWER_EXTENSION</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

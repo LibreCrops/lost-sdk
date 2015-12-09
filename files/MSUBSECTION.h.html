@@ -1,0 +1,54 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_MSUBSECTION</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CONTROL_AREA.h.html#52">CONTROL_AREA</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="3">ControlArea</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="MMPTE.h.html#16">MMPTE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="4">SubsectionBase</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="SUBSECTION.h.html#19">SUBSECTION</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="7">NextSubsection</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="MSUBSECTION.h.html#32">MSUBSECTION</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="8">NextMappedSubsection</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">PtesInSubsection</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">UnusedPtes</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="MM_AVL_TABLE.h.html#9">MM_AVL_TABLE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="14">GlobalPerSessionHead</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">LongFlags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="MMSUBSECTION_FLAGS.h.html#11">MMSUBSECTION_FLAGS</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">SubsectionFlags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">u</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="21">StartingSector</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="22">NumberOfFullSectors</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a href="RTL_BALANCED_LINKS.h.html#6">Balance</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">2</span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="MMSUBSECTION_NODE.h.html#17">MMSUBSECTION_NODE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="26">Parent</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="27">u1</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="MMSUBSECTION_NODE.h.html#17">MMSUBSECTION_NODE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="28">LeftChild</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="MMSUBSECTION_NODE.h.html#17">MMSUBSECTION_NODE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="29">RightChild</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="30">DereferenceList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="31">NumberOfMappedViews</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="32">MSUBSECTION</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="32">PMSUBSECTION</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

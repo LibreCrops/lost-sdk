@@ -1,0 +1,54 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_DBGKD_MANIPULATE_STATE64</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">ApiNumber</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">ProcessorLevel</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Processor</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">ReturnStatus</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_READ_MEMORY64.h.html#6">DBGKD_READ_MEMORY64</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">ReadMemory</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_WRITE_MEMORY64.h.html#6">DBGKD_WRITE_MEMORY64</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">WriteMemory</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_GET_CONTEXT.h.html#4">DBGKD_GET_CONTEXT</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">GetContext</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_SET_CONTEXT.h.html#4">DBGKD_SET_CONTEXT</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">SetContext</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_WRITE_BREAKPOINT64.h.html#5">DBGKD_WRITE_BREAKPOINT64</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">WriteBreakPoint</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_RESTORE_BREAKPOINT.h.html#4">DBGKD_RESTORE_BREAKPOINT</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">RestoreBreakPoint</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_CONTINUE.h.html#4">DBGKD_CONTINUE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">Continue</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_CONTINUE2.h.html#9">DBGKD_CONTINUE2</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">Continue2</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_READ_WRITE_IO64.h.html#6">DBGKD_READ_WRITE_IO64</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">ReadWriteIo</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_READ_WRITE_IO_EXTENDED64.h.html#9">DBGKD_READ_WRITE_IO_EXTENDED64</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">ReadWriteIoExtended</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_QUERY_SPECIAL_CALLS.h.html#4">DBGKD_QUERY_SPECIAL_CALLS</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">QuerySpecialCalls</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_SET_SPECIAL_CALL64.h.html#4">DBGKD_SET_SPECIAL_CALL64</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">SetSpecialCall</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_SET_INTERNAL_BREAKPOINT64.h.html#5">DBGKD_SET_INTERNAL_BREAKPOINT64</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="21">SetInternalBreakpoint</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_GET_INTERNAL_BREAKPOINT64.h.html#10">DBGKD_GET_INTERNAL_BREAKPOINT64</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="22">GetInternalBreakpoint</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_GET_VERSION64.h.html#17">DBGKD_GET_VERSION64</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">GetVersion64</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_BREAKPOINTEX.h.html#5">DBGKD_BREAKPOINTEX</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="24">BreakPointEx</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_READ_WRITE_MSR.h.html#6">DBGKD_READ_WRITE_MSR</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="25">ReadWriteMsr</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_SEARCH_MEMORY.h.html#10">DBGKD_SEARCH_MEMORY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="26">SearchMemory</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_GET_SET_BUS_DATA.h.html#8">DBGKD_GET_SET_BUS_DATA</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="27">GetSetBusData</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_FILL_MEMORY.h.html#7">DBGKD_FILL_MEMORY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="28">FillMemory</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_QUERY_MEMORY.h.html#7">DBGKD_QUERY_MEMORY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="29">QueryMemory</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_SWITCH_PARTITION.h.html#4">DBGKD_SWITCH_PARTITION</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="30">SwitchPartition</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="31">u</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="32">DBGKD_MANIPULATE_STATE64</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="32">PDBGKD_MANIPULATE_STATE64</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

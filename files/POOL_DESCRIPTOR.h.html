@@ -1,0 +1,41 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_POOL_DESCRIPTOR</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="POOL_TYPE.h.html#18">POOL_TYPE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">PoolType</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="KGUARDED_MUTEX.h.html#16">KGUARDED_MUTEX</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">PagedLock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">NonPagedLock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">RunningAllocs</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">RunningDeAllocs</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">TotalBigPages</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">ThreadsProcessingDeferrals</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">TotalBytes</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">PoolIndex</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">TotalPages</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">**</span><span style="color:#000000"><a name="16">PendingFrees</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">PendingFreeDepth</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">ListHeads</a></span><span style="color:#000000">[</span><span style="color:#000000">256</span><span style="color:#000000">];</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">POOL_DESCRIPTOR</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="19">PPOOL_DESCRIPTOR</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

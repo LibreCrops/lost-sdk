@@ -1,0 +1,35 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">SectionOffset</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">SectionLength</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="WHEA_REVISION.h.html#9">WHEA_REVISION</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Revision</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS.h.html#10">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">ValidBits</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">Reserved</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_FLAGS.h.html#14">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_FLAGS</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="GUID.h.html#7">GUID</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">SectionType</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="GUID.h.html#7">GUID</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">FRUId</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="WHEA_ERROR_SEVERITY.h.html#7">WHEA_ERROR_SEVERITY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">SectionSeverity</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">CHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">FRUText</a></span><span style="color:#000000">[</span><span style="color:#000000">20</span><span style="color:#000000">];</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="13">PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

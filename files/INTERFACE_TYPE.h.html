@@ -1,0 +1,44 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">enum</span></b>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="3">InterfaceTypeUndefined</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">4294967295</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="4">Internal</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">0</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="5">Isa</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">1</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="6">Eisa</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">2</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="7">MicroChannel</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">3</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="8">TurboChannel</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">4</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="9">PCIBus</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">5</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="10">VMEBus</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">6</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="11">NuBus</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">7</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="12">PCMCIABus</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">8</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="13">CBus</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">9</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="14">MPIBus</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">10</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="15">MPSABus</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">11</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="16">ProcessorInternal</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">12</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="17">InternalPowerBus</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">13</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="18">PNPISABus</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">14</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="19">PNPBus</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">15</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="20">Vmcs</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">16</span><span style="color:#000000">,</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a name="21">MaximumInterfaceType</a></span><span style="color:#000000"> </span><span style="color:#000000">=</span><span style="color:#000000"> </span><span style="color:#000000">17</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="22">INTERFACE_TYPE</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

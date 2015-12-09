@@ -1,0 +1,57 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_CM_KCB_UOW</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">TransactionListEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CM_INTENT_LOCK.h.html#5">CM_INTENT_LOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="4">KCBLock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CM_INTENT_LOCK.h.html#5">CM_INTENT_LOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="5">KeyLock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">KCBListEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CM_KEY_CONTROL_BLOCK.h.html#69">CM_KEY_CONTROL_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="7">KeyControlBlock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CM_TRANS.h.html#15">CM_TRANS</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="8">Transaction</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">UoWState</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="UoWActionType.h.html#18">UoWActionType</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">ActionType</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="HSTORAGE_TYPE.h.html#6">HSTORAGE_TYPE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">StorageType</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="CM_KEY_CONTROL_BLOCK.h.html#69">CM_KEY_CONTROL_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="14">ChildKCB</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">VolatileKeyCell</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">OldValueCell</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">NewValueCell</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="21">UserFlags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html#14">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="22">LastWriteTime</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">TxSecurityCell</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="CM_KEY_CONTROL_BLOCK.h.html#69">CM_KEY_CONTROL_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="26">OldChildKCB</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="CM_KEY_CONTROL_BLOCK.h.html#69">CM_KEY_CONTROL_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="27">NewChildKCB</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
+<span style="color:#000000">        </span><span style="color:#000000">{</span>
+<span style="color:#000000">            </span><span style="color:#000000"><a href="CM_KEY_CONTROL_BLOCK.h.html#69">CM_KEY_CONTROL_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="31">OtherChildKCB</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="32">ThisVolatileKeyCell</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="35">CM_KCB_UOW</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="35">PCM_KCB_UOW</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

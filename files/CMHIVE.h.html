@@ -1,0 +1,86 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_CMHIVE</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="HHIVE.h.html#33">HHIVE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Hive</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="4">FileHandles</a></span><span style="color:#000000">[</span><span style="color:#000000">6</span><span style="color:#000000">];</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">NotifyList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">HiveList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">PreloadedHiveList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="EX_RUNDOWN_REF.h.html#8">EX_RUNDOWN_REF</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">HiveRundown</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">ParseCacheEntries</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CM_KEY_HASH_TABLE_ENTRY.h.html#6">CM_KEY_HASH_TABLE_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="10">KcbCacheTable</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">KcbCacheTableSize</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">Identity</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="FAST_MUTEX.h.html#8">FAST_MUTEX</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="13">HiveLock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="EX_PUSH_LOCK.h.html#16">EX_PUSH_LOCK</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">ViewLock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KTHREAD.h.html#220">KTHREAD</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="15">ViewLockOwner</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">ViewLockLast</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">ViewUnLockLast</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="FAST_MUTEX.h.html#8">FAST_MUTEX</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="18">WriterLock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="ERESOURCE.h.html#21">ERESOURCE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="19">FlusherLock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="RTL_BITMAP.h.html#5">RTL_BITMAP</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">FlushDirtyVector</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CMP_OFFSET_ARRAY.h.html#6">CMP_OFFSET_ARRAY</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="21">FlushOffsetArray</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="22">FlushOffsetArrayCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">FlushHiveTruncated</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="FAST_MUTEX.h.html#8">FAST_MUTEX</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="24">FlushLock2</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="EX_PUSH_LOCK.h.html#16">EX_PUSH_LOCK</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="25">SecurityLock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="26">MappedViewList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="27">PinnedViewList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="28">FlushedViewList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="29">MappedViewCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="30">PinnedViewCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="31">UseCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="32">ViewsPerHive</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="FILE_OBJECT.h.html#33">FILE_OBJECT</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="33">FileObject</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="34">LastShrinkHiveSize</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html#14">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="35">ActualFileSize</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="UNICODE_STRING.h.html#6">UNICODE_STRING</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="36">FileFullPath</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="UNICODE_STRING.h.html#6">UNICODE_STRING</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="37">FileUserName</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="UNICODE_STRING.h.html#6">UNICODE_STRING</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="38">HiveRootPath</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="39">SecurityCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="40">SecurityCacheSize</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="41">SecurityHitHint</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CM_KEY_SECURITY_CACHE_ENTRY.h.html#5">CM_KEY_SECURITY_CACHE_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="42">SecurityCache</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="43">SecurityHash</a></span><span style="color:#000000">[</span><span style="color:#000000">64</span><span style="color:#000000">];</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="44">UnloadEventCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KEVENT.h.html#4">KEVENT</a></span><span style="color:#000000"> </span><span style="color:#000000">**</span><span style="color:#000000"><a name="45">UnloadEventArray</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CM_KEY_CONTROL_BLOCK.h.html#69">CM_KEY_CONTROL_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="46">RootKcb</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="47">Frozen</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CM_WORKITEM.h.html#7">CM_WORKITEM</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="48">UnloadWorkItem</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CM_WORKITEM.h.html#7">CM_WORKITEM</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="49">UnloadWorkItemHolder</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="50">GrowOnlyMode</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="51">GrowOffset</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="52">KcbConvertListHead</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="53">KnodeConvertListHead</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CM_CELL_REMAP_BLOCK.h.html#5">CM_CELL_REMAP_BLOCK</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="54">CellRemapArray</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="55">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="56">TrustClassEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="57">FlushCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="CM_RM.h.html#20">CM_RM</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="58">CmRm</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="59">CmRmInitFailPoint</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="60">CmRmInitFailStatus</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KTHREAD.h.html#220">KTHREAD</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="61">CreatorOwner</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="KTHREAD.h.html#220">KTHREAD</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="62">RundownThread</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html#14">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="63">LastWriteTime</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="64">CMHIVE</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="64">PCMHIVE</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

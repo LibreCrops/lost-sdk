@@ -1,0 +1,38 @@
+<!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lost SDK For Windows Security Researchers</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+<pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_ETW_GUID_ENTRY</a></span>
+<span style="color:#000000">{</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">GuidList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">RefCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="GUID.h.html#7">GUID</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Guid</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html#5">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">RegListHead</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="7">SecurityDescriptor</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
+<span style="color:#000000">    </span><span style="color:#000000">{</span>
+<span style="color:#000000">        </span><span style="color:#000000"><a href="ETW_LAST_ENABLE_INFO.h.html#8">ETW_LAST_ENABLE_INFO</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">LastEnable</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">MatchId</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="TRACE_ENABLE_INFO.h.html#11">TRACE_ENABLE_INFO</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">ProviderEnableInfo</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="TRACE_ENABLE_INFO.h.html#11">TRACE_ENABLE_INFO</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">EnableInfo</a></span><span style="color:#000000">[</span><span style="color:#000000">8</span><span style="color:#000000">];</span>
+<span style="color:#000000">    </span><span style="color:#000000"><a href="EVENT_FILTER_HEADER.h.html#9">EVENT_FILTER_HEADER</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="15">FilterData</a></span><span style="color:#000000">[</span><span style="color:#000000">8</span><span style="color:#000000">];</span>
+<span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">ETW_GUID_ENTRY</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="16">PETW_GUID_ENTRY</a></span><span style="color:#000000">;</span>
+
+
+</pre>    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
