@@ -13,20 +13,20 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_DBGKD_GET_VERSION64</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">MajorVersion</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">MinorVersion</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">ProtocolVersion</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">KdSecondaryVersion</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">Flags</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">MachineType</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">MaxPacketType</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">MaxStateChange</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">MaxManipulate</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">Simulation</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">Unused</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">KernBase</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">PsLoadedModuleList</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">DebuggerDataList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">MajorVersion</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">MinorVersion</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">ProtocolVersion</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">KdSecondaryVersion</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">MachineType</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">MaxPacketType</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">MaxStateChange</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">MaxManipulate</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">Simulation</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">Unused</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">KernBase</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">PsLoadedModuleList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">DebuggerDataList</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">DBGKD_GET_VERSION64</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="17">PDBGKD_GET_VERSION64</a></span><span style="color:#000000">;</span>
 
 

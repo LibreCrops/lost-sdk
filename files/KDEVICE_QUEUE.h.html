@@ -13,14 +13,14 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_KDEVICE_QUEUE</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><span style="color:#000000">SHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Type</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">SHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">Size</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">SHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Type</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">SHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">Size</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">DeviceListHead</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">Lock</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">Lock</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">Busy</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000">Reserved</span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">8</span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">Busy</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000">Reserved</span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">8</span><span style="color:#000000">;</span>
 <a href="ALPC_PORT_ATTRIBUTES.h.html">Reserved -> ALPC_PORT_ATTRIBUTES.h:12</a>
 <a href="ARBITER_ALTERNATIVE.h.html">Reserved -> ARBITER_ALTERNATIVE.h:10</a>
 <a href="CM_KEY_SECURITY.h.html">Reserved -> CM_KEY_SECURITY.h:4</a>
@@ -94,7 +94,7 @@ http://www.gnu.org/software/src-highlite -->
 <a href="WHEA_TIMESTAMP.h.html">Reserved -> WHEA_TIMESTAMP.h:9</a>
 <a href="XSAVE_AREA_HEADER.h.html">Reserved -> XSAVE_AREA_HEADER.h:4</a>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">Hint</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">56</span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">LONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">Hint</a></span><span style="color:#000000"> </span><span style="color:#000000">:</span><span style="color:#000000"> </span><span style="color:#000000">56</span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">KDEVICE_QUEUE</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="13">PKDEVICE_QUEUE</a></span><span style="color:#000000">;</span>
 
 

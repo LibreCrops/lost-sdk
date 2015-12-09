@@ -13,20 +13,20 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_DBGKD_GET_VERSION32</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">MajorVersion</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">MinorVersion</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">ProtocolVersion</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">Flags</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">KernBase</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">PsLoadedModuleList</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">MachineType</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">ThCallbackStack</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">NextCallback</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">FramePointer</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">KiCallUserMode</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">KeUserCallbackDispatcher</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">BreakpointWithStatus</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">DebuggerDataList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">MajorVersion</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">MinorVersion</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">ProtocolVersion</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">KernBase</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">PsLoadedModuleList</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">MachineType</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">ThCallbackStack</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">NextCallback</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">FramePointer</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">KiCallUserMode</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">KeUserCallbackDispatcher</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">BreakpointWithStatus</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">DebuggerDataList</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">DBGKD_GET_VERSION32</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="17">PDBGKD_GET_VERSION32</a></span><span style="color:#000000">;</span>
 
 

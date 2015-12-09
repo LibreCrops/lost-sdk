@@ -13,18 +13,18 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_MI_PAGEFILE_TRACES</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><span style="color:#000000">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Status</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">Priority</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">IrpPriority</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Status</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">Priority</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">IrpPriority</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">CurrentTime</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">AvailablePages</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">ModifiedPagesTotal</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">ModifiedPagefilePages</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">ModifiedNoWritePages</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">AvailablePages</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">ModifiedPagesTotal</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">ModifiedPagefilePages</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">ModifiedNoWritePages</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
 <span style="color:#000000">        </span><span style="color:#000000"><a href="MDL.h.html">MDL</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">Mdl</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">Page</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#000000">        </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">Page</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">MdlHack</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">MI_PAGEFILE_TRACES</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="16">PMI_PAGEFILE_TRACES</a></span><span style="color:#000000">;</span>
 

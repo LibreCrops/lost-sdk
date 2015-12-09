@@ -17,13 +17,13 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">    </span><span style="color:#000000"><a href="MM_PAGE_ACCESS_TYPE.h.html">MM_PAGE_ACCESS_TYPE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">Type</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">EmptySequenceNumber</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">CurrentFileIndex</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">EmptySequenceNumber</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">CurrentFileIndex</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">CreateTime</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">CreateTime</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">EmptyTime</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="13">EmptyTime</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000"><a href="MM_PAGE_ACCESS_INFO.h.html">MM_PAGE_ACCESS_INFO</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="14">TempEntry</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
@@ -31,15 +31,15 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
 <span style="color:#000000">            </span><span style="color:#000000"><a href="MM_PAGE_ACCESS_INFO.h.html">MM_PAGE_ACCESS_INFO</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="20">PageEntry</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">            </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="21">FileEntry</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">            </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="22">FirstFileEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="21">FileEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="22">FirstFileEntry</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">            </span><span style="color:#000000"><a href="EPROCESS.h.html">EPROCESS</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="23">Process</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">            </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="24">SessionId</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="24">SessionId</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
-<span style="color:#000000">            </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="28">PageFrameEntry</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">            </span><span style="color:#000000">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="29">LastPageFrameEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="28">PageFrameEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="29">LastPageFrameEntry</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="32">MM_PAGE_ACCESS_INFO_HEADER</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="32">PMM_PAGE_ACCESS_INFO_HEADER</a></span><span style="color:#000000">;</span>

@@ -16,19 +16,19 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">    </span><span style="color:#000000"><a href="CONTROL_AREA.h.html">CONTROL_AREA</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="3">ControlArea</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000"><a href="MMPTE.h.html">MMPTE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="4">SubsectionBase</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000"><a href="SUBSECTION.h.html">SUBSECTION</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="5">NextSubsection</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">PtesInSubsection</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">PtesInSubsection</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">UnusedPtes</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">UnusedPtes</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000"><a href="MM_AVL_TABLE.h.html">MM_AVL_TABLE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="10">GlobalPerSessionHead</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">LongFlags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">LongFlags</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000"><a href="MMSUBSECTION_FLAGS.h.html">MMSUBSECTION_FLAGS</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">SubsectionFlags</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">u</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">StartingSector</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#000000">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">NumberOfFullSectors</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="17">StartingSector</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">NumberOfFullSectors</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="19">SUBSECTION</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="19">PSUBSECTION</a></span><span style="color:#000000">;</span>
 
 
