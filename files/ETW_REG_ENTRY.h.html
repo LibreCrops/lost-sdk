@@ -15,21 +15,21 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">{</span>
 <span style="color:#000000">    </span><span style="color:#000000"><a href="LIST_ENTRY.h.html">LIST_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">RegList</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000"><a href="ETW_GUID_ENTRY.h.html">ETW_GUID_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="4">GuidEntry</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Index</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">Flags</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">EnableMask</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">short</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Index</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">short</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">char</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">EnableMask</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">SessionId</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">SessionId</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000"><a href="ETW_REPLY_QUEUE.h.html">ETW_REPLY_QUEUE</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="11">ReplyQueue</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000"><a href="ETW_REG_ENTRY.h.html">ETW_REG_ENTRY</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="12">ReplySlot</a></span><span style="color:#000000">[</span><span style="color:#000000">4</span><span style="color:#000000">];</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
 <span style="color:#000000">        </span><span style="color:#000000"><a href="EPROCESS.h.html">EPROCESS</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="16">Process</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#208920">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="17">Callback</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">void</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="17">Callback</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="19">CallbackContext</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">void</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="19">CallbackContext</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">ETW_REG_ENTRY</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="20">PETW_REG_ENTRY</a></span><span style="color:#000000">;</span>
 
 

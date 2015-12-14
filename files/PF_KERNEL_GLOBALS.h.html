@@ -13,14 +13,14 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_PF_KERNEL_GLOBALS</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">AccessBufferAgeThreshold</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#000000">__int64</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">AccessBufferAgeThreshold</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000"><a href="EX_RUNDOWN_REF.h.html">EX_RUNDOWN_REF</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">AccessBufferRef</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000"><a href="KEVENT.h.html">KEVENT</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">AccessBufferExistsEvent</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">AccessBufferMax</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">AccessBufferMax</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000"><a href="SLIST_HEADER.h.html">SLIST_HEADER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">AccessBufferList</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">StreamSequenceNumber</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">Flags</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">ScenarioPrefetchCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">StreamSequenceNumber</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">ScenarioPrefetchCount</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">PF_KERNEL_GLOBALS</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="11">PPF_KERNEL_GLOBALS</a></span><span style="color:#000000">;</span>
 
 

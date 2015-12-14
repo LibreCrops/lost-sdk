@@ -13,11 +13,11 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_ETW_SESSION_PERF_COUNTERS</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><span style="color:#208920">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">BufferMemoryPagedPool</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">BufferMemoryNonPagedPool</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">EventsLoggedCount</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">EventsLost</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">NumConsumers</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">BufferMemoryPagedPool</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">BufferMemoryNonPagedPool</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#000000">__int64</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">EventsLoggedCount</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">EventsLost</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">NumConsumers</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">ETW_SESSION_PERF_COUNTERS</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="8">PETW_SESSION_PERF_COUNTERS</a></span><span style="color:#000000">;</span>
 
 

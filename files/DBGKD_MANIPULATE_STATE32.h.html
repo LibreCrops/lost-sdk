@@ -13,10 +13,10 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_DBGKD_MANIPULATE_STATE32</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">ApiNumber</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">ProcessorLevel</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Processor</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">ReturnStatus</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">ApiNumber</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">short</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">ProcessorLevel</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">short</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Processor</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">ReturnStatus</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
 <span style="color:#000000">        </span><span style="color:#000000"><a href="DBGKD_READ_MEMORY32.h.html">DBGKD_READ_MEMORY32</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">ReadMemory</a></span><span style="color:#000000">;</span>

@@ -13,12 +13,12 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_HBIN</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Signature</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">FileOffset</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Size</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">Reserved1</a></span><span style="color:#000000">[</span><span style="color:#000000">2</span><span style="color:#000000">];</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Signature</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">FileOffset</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Size</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">Reserved1</a></span><span style="color:#000000">[</span><span style="color:#000000">2</span><span style="color:#000000">];</span>
 <span style="color:#000000">    </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="7">TimeStamp</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">Spare</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">Spare</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">HBIN</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="9">PHBIN</a></span><span style="color:#000000">;</span>
 
 

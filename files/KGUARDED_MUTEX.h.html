@@ -13,18 +13,18 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_KGUARDED_MUTEX</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#208920">LONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Count</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><b><span style="color:#9c20ee">volatile</span></b><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Count</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000"><a href="KTHREAD.h.html">KTHREAD</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="4">Owner</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Contention</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Contention</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000"><a href="KGATE.h.html">KGATE</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">Gate</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
-<span style="color:#000000">            </span><span style="color:#208920">SHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">KernelApcDisable</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">            </span><span style="color:#208920">SHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">SpecialApcDisable</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#208920">short</span><span style="color:#000000"> </span><span style="color:#000000"><a name="11">KernelApcDisable</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#208920">short</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">SpecialApcDisable</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">CombinedApcDisable</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="14">CombinedApcDisable</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">KGUARDED_MUTEX</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="16">PKGUARDED_MUTEX</a></span><span style="color:#000000">;</span>
 

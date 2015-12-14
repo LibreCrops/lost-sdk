@@ -13,11 +13,11 @@ http://www.gnu.org/software/src-highlite -->
   <body>
 <pre><b><span style="color:#9c20ee">typedef</span></b><span style="color:#000000"> </span><b><span style="color:#9c20ee">struct</span></b><span style="color:#000000"> </span><span style="color:#000000"><a name="1">_XSTATE_CONTEXT</a></span>
 <span style="color:#000000">{</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Mask</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">Length</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Reserved1</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#000000">__int64</span><span style="color:#000000"> </span><span style="color:#000000"><a name="3">Mask</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="4">Length</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Reserved1</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000"><a href="XSAVE_AREA.h.html">XSAVE_AREA</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="6">Area</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="7">Buffer</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">    </span><span style="color:#208920">void</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="7">Buffer</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">XSTATE_CONTEXT</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="8">PXSTATE_CONTEXT</a></span><span style="color:#000000">;</span>
 
 

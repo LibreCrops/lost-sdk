@@ -15,25 +15,25 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">{</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Marker</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="5">Marker</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
-<span style="color:#000000">            </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">Version</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">            </span><span style="color:#208920">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">HeaderType</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">            </span><span style="color:#208920">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">Flags</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">short</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">Version</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">char</span><span style="color:#000000"> </span><span style="color:#000000"><a name="9">HeaderType</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">char</span><span style="color:#000000"> </span><span style="color:#000000"><a name="10">Flags</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">Header</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">Header</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000"><a href="WMI_TRACE_PACKET.h.html">WMI_TRACE_PACKET</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">Packet</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">TS</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#000000">__int64</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">TS</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000"><a href="LARGE_INTEGER.h.html">LARGE_INTEGER</a></span><span style="color:#000000"> </span><span style="color:#000000"><a name="21">SystemTime</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
-<span style="color:#000000">    </span><span style="color:#208920">UCHAR</span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">Data</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#000000">    </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">char</span><span style="color:#000000"> </span><span style="color:#000000"><a name="23">Data</a></span><span style="color:#000000">[</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="24">PERFINFO_TRACE_HEADER</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="24">PPERFINFO_TRACE_HEADER</a></span><span style="color:#000000">;</span>
 
 

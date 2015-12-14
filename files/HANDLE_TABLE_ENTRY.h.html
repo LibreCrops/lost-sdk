@@ -15,20 +15,20 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color:#000000">{</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#208920">VOID</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="5">Object</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">ObAttributes</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">void</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="5">Object</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="6">ObAttributes</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000"><a href="HANDLE_TABLE_ENTRY_INFO.h.html">HANDLE_TABLE_ENTRY_INFO</a></span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="7">InfoTable</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#208920">ULONGLONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">Value</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#000000">__int64</span><span style="color:#000000"> </span><span style="color:#000000"><a name="8">Value</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><b><span style="color:#9c20ee">union</span></b>
 <span style="color:#000000">    </span><span style="color:#000000">{</span>
-<span style="color:#000000">        </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">GrantedAccess</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="12">GrantedAccess</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><b><span style="color:#9c20ee">struct</span></b>
 <span style="color:#000000">        </span><span style="color:#000000">{</span>
-<span style="color:#000000">            </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">GrantedAccessIndex</a></span><span style="color:#000000">;</span>
-<span style="color:#000000">            </span><span style="color:#208920">USHORT</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">CreatorBackTraceIndex</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">short</span><span style="color:#000000"> </span><span style="color:#000000"><a name="15">GrantedAccessIndex</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">            </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">short</span><span style="color:#000000"> </span><span style="color:#000000"><a name="16">CreatorBackTraceIndex</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">        </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
-<span style="color:#000000">        </span><span style="color:#208920">ULONG</span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">NextFreeTableEntry</a></span><span style="color:#000000">;</span>
+<span style="color:#000000">        </span><span style="color:#208920">unsigned</span><span style="color:#000000"> </span><span style="color:#208920">long</span><span style="color:#000000"> </span><span style="color:#000000"><a name="18">NextFreeTableEntry</a></span><span style="color:#000000">;</span>
 <span style="color:#000000">    </span><span style="color:#000000">}</span><span style="color:#000000">;</span>
 <span style="color:#000000">}</span><span style="color:#000000"> </span><span style="color:#000000"><a name="20">HANDLE_TABLE_ENTRY</a></span><span style="color:#000000">,</span><span style="color:#000000"> </span><span style="color:#000000">*</span><span style="color:#000000"><a name="20">PHANDLE_TABLE_ENTRY</a></span><span style="color:#000000">;</span>
 
