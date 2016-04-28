@@ -26,7 +26,7 @@ Built by `@NoviceLive`_ with cdef_ by `@kbridge`_,
 `GNU Source-highlight`_ and `ZURB Foundation for Sites`_.
 
 
-.. _PdbReader: https://github.com/kbridge/cdef
+.. _cdef: https://github.com/kbridge/cdef
 .. _@NoviceLive: https://github.com/NoviceLive
 .. _@kbridge: https://github.com/kbridge
 .. _GNU Source-highlight: http://www.gnu.org/software/src-highlite/
