@@ -1,16 +1,12 @@
-Lost SDK For Windows Security Researchers
-=========================================
+Lost SDK For Windows Security Researchers (WIP)
+===============================================
 
 
 http://librecrops.github.io/lost-sdk
 
 
-Current State: Work In Progress.
-
-
 Notice
 ------
-
 
 This project is a demonstration of cdef_.
 
@@ -18,16 +14,20 @@ For further development upon these structures
 or customized requirements, you will want to use it.
 
 
+Source Code
+-----------
+
+See the parent project cdef_.
+
+
 Acknowledgements
 ----------------
 
+- cdef_
+- `GNU Source-highlight`_
+- `ZURB Foundation for Sites`_.
 
-Built by `@NoviceLive`_ with cdef_ by `@kbridge`_,
-`GNU Source-highlight`_ and `ZURB Foundation for Sites`_.
 
-
-.. _cdef: https://github.com/kbridge/cdef
-.. _@NoviceLive: https://github.com/NoviceLive
-.. _@kbridge: https://github.com/kbridge
+.. _cdef: https://github.com/LibreCrops/cdef
 .. _GNU Source-highlight: http://www.gnu.org/software/src-highlite/
 .. _ZURB Foundation for Sites: http://foundation.zurb.com/
